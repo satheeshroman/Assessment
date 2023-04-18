@@ -1,0 +1,32 @@
+HTTP:
+
+                HTTP stands for hypertext transfer protocol & it is used in client-server communication. By using HTTP user sends the request to the server & the server sends the response to the user.
+
+
+HTTP/1.1:
+               let’s assume the situation when you make a request to the server for the geeksforgeeks.html page & server responds to you as a resource geeksforgeeks.html page.
+
+
+HTTP/2: 
+              HTTP/2 was developed over the SPDY protocol. HTTP/2 works on the binary framing layer instead of textual that converts all the messages in binary format. it works on fully multiplexed that is one TCP connection is used for multiple requests.
+   
+ HTTP/1.1
+        * It works on the textual format.
+        * There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources
+        * It uses requests resource Inlining for use getting multiple pages
+        * It compresses data by itself.
+
+
+HTTP/2
+        * It works on the binary protocol.
+        * It allows multiplexing so one TCP connection is required for multiple requests.
+        * It uses PUSH frame by server that collects all multiple pages 
+        * It uses HPACK for data compression.
+
+
+
+*Objects And Its Internal Representation In JavaScript !:  
+
+               *  Objects, in JavaScript, is it’s most important data-type and forms the building blocks for modern JavaScript. These objects are quite different from JavaScript’s primitive data-types(Number, String, Boolean, null, undefined and symbol) in the sense that while these primitive data-types all store a single value each (depending on their types).
+            
+               *  Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.An object, is a reference data type.
