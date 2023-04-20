@@ -1,0 +1,25 @@
+let resume={
+	
+	name:"Satheesh",
+	fathername:"Ganeshan",
+	mobile:"8526802553",
+	Education:[
+	{
+		type:"SSLC",
+		Institution:"Govrt",
+		precentage:"90"
+	},
+	{
+		type:"HSC",
+		Institution:"SLB",
+		precentage:"89",
+	},
+	{  type:"UG",
+		Institution:"Rajas",
+		precentage:"70"
+	}	
+	],
+	Programingskills:["c","html","css","javascript"]
+	
+}
+    console.log(resume);  
