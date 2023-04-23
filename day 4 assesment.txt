@@ -1,0 +1,65 @@
+
+let details1 = {name:"satheesh",email:"satheesh@gmail.com",mobile:"727282992",age:"22",gender:"Male"}
+let details2 = {mobile:"727288288",age:"22",gender:"Male",name:"roman",email:"roman@gmail.com"}
+
+let a = true
+for(let h in details1)
+{
+    if(details1[h]!==details2[h])
+    {
+        a= false;
+        break
+    }
+}
+  
+a?console.log("Equall"):console.log("Not Equall")
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Third Assesment</title>
+    </head>
+    <body>
+        <h1>Satheesh.G</h1>
+        <h2>This is an example for XML HTTP Request</h2>
+        <script>
+            console.log("Welcome to HTML JS")
+
+            function handleData(){
+                let data=JSON.parse(this.responseText)
+				
+			//for(let i=0;i<data.length;i++)
+                      // {
+		        //console.log(data[i].falg);
+
+			//}
+              //for(i in data){
+                 // console.log(data[i].population)
+                  //}
+                    
+              // for(i in data){
+                  //console.log(data[i].subregion)
+                 // }
+		
+
+                 for(i in data){
+                  console.log(data[i].region,data[i].subregion)
+                  }
+		
+			
+			
+            }
+   
+            const req = new XMLHttpRequest();
+             req.addEventListener('load',handleData)
+            //req.onload = (res)=>{
+                //console.log(JSON.parse(res.srcElement.responseText))
+           // }
+            req.open("GET","https://restcountries.com/v3.1/all")
+            req.send()
+        </script>
+    </body>
+</html>
