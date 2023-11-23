@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="head">
+        <h1>DOM Form</h1>
+    </div>
+    
+
+    <form id="myForm" class="myform">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname"  required><br><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="pincode">Pincode:</label>
+        <input type="number" id="pincode" name="pincode" required><br><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required> Male
+        <input type="radio" id="female" name="gender" value="Female" required> Female<br><br>
+
+        <label for="food" >Food (choose 2): </label>
+        <input type="checkbox" id="food1" name="food" value="Burger"  > Burger
+        <input type="checkbox" id="food2" name="food" value="Pizza" > Pizza
+        <input type="checkbox" id="food3" name="food" value="Sushi" > Briyani
+        <input type="checkbox" id="food4" name="food" value="Pasta" > Pasta
+        <input type="checkbox" id="food5" name="food" value="Salad"  > Salad<br><br>
+
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="UP">UP</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div class="head2">
+        <h1>Output Table</h1>
+    </div>
+   
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Country</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>State</th>
+            </tr>
+         </thead>
+         <tbody>
+         </tbody>
+    </table>
+
+      <script src="script1.js"></script>
+</body>
+</html>
+
